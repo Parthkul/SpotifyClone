@@ -1,0 +1,213 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap");
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: antiquewhite;
+  /* overflow-y: hidden; */
+}
+
+/* Navigation Menu */
+
+.logo {
+  width: 55px;
+  margin: 12px;
+  padding: 0 8px;
+}
+.navbar {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-color: #202020;
+  color: white;
+  height: 65px;
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+
+
+/* Main Container */
+
+.container {
+  min-height: 72vh;
+  background: url("bg.jpg");
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  margin: 13px auto;
+  display: flex;
+  width: 70%;
+  padding: 23px;
+  border-radius: 12px;
+}
+
+/* Song-List */
+
+.song-item {
+  height: 50px;
+  /* color: black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: white; */
+  border: 2px double white;
+  border-radius: 34px;
+  margin: 17px 12px;
+  /* margin-top: 2rem; */
+  padding: 4px 6px;
+}
+
+.song-cover {
+  width: 45px;
+  margin: 0 23px;
+  border: 1px solid white;
+  border-radius: 34px;
+}
+
+.SongName{
+  padding: 0 40px;
+}
+
+#MastggerSongName {
+  margin: 0 35px;
+}
+
+.timestamp {
+  margin: 0 23px;
+}
+
+.play-icon i {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 12px;
+  margin-left: -19px;
+}
+
+/* Progress Bar */
+
+.bottom {
+  background-color: #202020;
+  color: white;
+  position: sticky;
+  height: 130px;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -18px;
+}
+
+.icons {
+  margin: 12px 1px;
+}
+
+.icons i {
+  cursor: pointer;
+}
+
+#progress-bar {
+  width: 70vw;
+  cursor: pointer;
+}
+
+/* Progress Bar - Song Info */
+
+.song-info {
+  position: absolute;
+  left: 15vw;
+  font-family: "Varela Round", sans-serif;
+}
+
+.song-info img {
+  opacity: 0;
+  transition: opacity 0.45s ease-in;
+}
+
+@media only screen and (max-width:870px){
+  .bottom{
+    height: auto;
+  }
+
+  .icons{
+    margin: 35px 1px;
+  }
+
+  #progress-bar{
+    margin-top: 25px;
+  }
+
+  .song-info{
+      text-align: center;
+      align-items: center;
+      margin-bottom: 2.5rem;
+      justify-content: center;
+      display: flex;
+      width: 68vw;
+  }
+  .container {
+    justify-content: center;
+  }
+
+  .SongName{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .song-item {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .play-icon i{
+    font-size: 24px;
+  } 
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .icons {
+    margin-top: 25px;
+  }
+
+  .SongInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    height: auto;
+  }
+
+
+  .brand {
+    font-size: 1.5rem;
+    margin: 2px 1px;
+    padding: 0 3px;
+ }
+
+}
